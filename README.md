@@ -1,288 +1,123 @@
-<a name="readme-top"></a>
+## shopweb
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
+Generated with ❤️ from [DhiWise](https://www.dhiwise.com)
 
-Modify this file to match your project and remove sections that don't apply.
+## Description
 
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
+- This React application is built using [Vite](https://vitejs.dev/).
+- It uses [Tailwind CSS](https://tailwindcss.com/)
+- The application is generated in JavaScript.
 
-OPTIONAL SECTIONS:
-- FAQ
+## Pre-requisites
 
-After you're finished please remove all the comments and instructions!
--->
+- [git](https://git-scm.com/) - v2.13 or greater
+- [NodeJS](https://nodejs.org/en/) - v16 or greater
+- [npm](https://www.npmjs.com/) - v6 or greater
 
-<div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
+## Running in dev environment
 
-  <h3><b>Microverse README Template</b></h3>
+1. `cd YOUR_APPLICATION`
+2. `npm install`
+3. `npm start`
 
-</div>
+## .env file
 
-<!-- TABLE OF CONTENTS -->
+This file contains various environment variables that you can configure.
 
-# 📗 Table of Contents
-
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
-
-<!-- PROJECT DESCRIPTION -->
-
-# 📖 [your_project_name] <a name="about-project"></a>
-
-> Describe your project in 1 or 2 sentences.
-
-**[your_project__name]** is a...
-
-## 🛠 Built With <a name="built-with"></a>
-
-### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
-
-<!-- Features -->
-
-### Key Features <a name="key-features"></a>
-
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- GETTING STARTED -->
-
-## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
-
-To get a local copy up and running, follow these steps.
-
-### Prerequisites
-
-In order to run this project you need:
-
-<!--
-Example command:
-
-```sh
- gem install rails
-```
- -->
-
-### Setup
-
-Clone this repository to your desired folder:
-
-<!--
-Example commands:
-
-```sh
-  cd my-folder
-  git clone git@github.com:myaccount/my-project.git
-```
---->
-
-### Install
-
-Install this project with:
-
-<!--
-Example command:
-
-```sh
-  cd my-project
-  gem install
-```
---->
-
-### Usage
-
-To run the project, execute the following command:
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
-### Run tests
-
-To run tests, run the following command:
-
-<!--
-Example command:
-
-```sh
-  bin/rails test test/models/article_test.rb
-```
---->
-
-### Deployment
-
-You can deploy this project using:
-
-<!--
-Example:
-
-```sh
+## Folder Structure
 
 ```
- -->
+.
+├── package.json
+├── postcss.config.js
+├── vite.config.js
+├── index.html
+├── public
+│   ├── assets
+│   │   ├── images --------- All Project Images
+│   │   └── fonts ---------- Project fonts
+│   ├── favicon.ico
+│   ├── manifest.json
+│   └── robots.txt
+├── README.md
+├── src
+│   ├── App.jsx
+│   ├── components --------- UI and Detected Common Components
+│   ├── constants ---------- Project constants
+│   ├── hooks -------------- Helpful Hooks
+│   ├── index.jsx
+│   ├── pages -------------- All route pages
+│   ├── Routes.jsx ---------- Routing
+│   ├── styles
+│   │   ├── index.css ------ Other Global Styles
+│   │   └── tailwind.css --- Default Tailwind modules
+│   └── util
+│       └── index.jsx ------- Helpful utils
+└── tailwind.config.js ----- Entire theme config, colors, fonts etc.
+```
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+For the project to build, **these files must exist with exact filenames**:
 
-<!-- AUTHORS -->
+- `index.html` is the page template;
+- `src/index.jsx` is the JavaScript entry point.
 
-## 👥 Authors <a name="authors"></a>
+You may create subdirectories inside src.
 
-> Mention all of the collaborators of this project.
+## Available Scripts
 
-👤 **Author1**
+In the project directory, you can run:
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+### `npm start`
 
-👤 **Author2**
+Runs the app in the development mode.<br>
+Open [http://localhost:5173](http://localhost:5173) to view it in the browser.
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+### `npm test`
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Launches the test runner in the interactive watch mode.<br>
 
-<!-- FUTURE FEATURES -->
+### `npm run build`
 
-## 🔭 Future Features <a name="future-features"></a>
+Builds the app for production to the `build` folder.<br>
 
-> Describe 1 - 3 features you will add to the project.
+### `npm run eject`
 
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time.
 
-<!-- CONTRIBUTING -->
+## Installing a Dependency
 
-## 🤝 Contributing <a name="contributing"></a>
+You can install any dependencies (for example, React Router) with `npm`:
 
-Contributions, issues, and feature requests are welcome!
+```sh
+npm install --save react-router
+```
 
-Feel free to check the [issues page](../../issues/).
+Alternatively you may use `yarn`:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```sh
+yarn add react-router
+```
 
-<!-- SUPPORT -->
+## License
 
-## ⭐️ Show your support <a name="support"></a>
+MIT License
 
-> Write a message to encourage readers to support your project
+Copyright (c) 2024 DhiWise
 
-If you like this project...
+Permission is hereby granted to any person obtaining a copy of this software and associated documentation files (the "Software"),to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-<!-- ACKNOWLEDGEMENTS -->
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+## DhiWise Support
 
-> Give credit to everyone who inspired your codebase.
+<a href="https://twitter.com/dhiwise"><img src="https://user-images.githubusercontent.com/35039342/55471524-8e24cb00-5627-11e9-9389-58f3d4419153.png" width="60" alt="DhiWise Twitter"></a>
 
-I would like to thank...
+<a href="https://www.youtube.com/c/DhiWise"><img src="https://cdn.vox-cdn.com/thumbor/0kpe316UpZWk53iw3bOLoJfF6hI=/0x0:1680x1050/1400x1400/filters:focal(706x391:974x659):format(gif)/cdn.vox-cdn.com/uploads/chorus_image/image/56414325/YTLogo_old_new_animation.0.gif" width="60" alt="DhiWise YouTube"></a>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<a href="https://discord.gg/UPhCetBkVu"><img src="https://user-images.githubusercontent.com/47489894/183043664-b01aac56-0372-458a-bde9-3f2a6bded21b.png" width="60" alt="DhiWise Discord"></a>
 
-<!-- FAQ (optional) -->
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-> Add at least 2 questions new developers would ask when they decide to use your project.
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
-
-## 📝 License <a name="license"></a>
-
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<a href="https://docs.dhiwise.com/docs/react/intro"><img src="https://global-uploads.webflow.com/618e36726d3c0f19c9284e56/62383865d5477f2e4f6b6e2e_main-monogram-p-500.png" width="60" alt="DhiWise Documentation"></a>
